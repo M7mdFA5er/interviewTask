@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BlockChain Intelligence Group" guice-stage="DEVELOPMENT">
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="interview Test">
+		<classes>
+		<class name="tests.HomePageTest"></class>
+		<class name="tests.ProductPageTest"></class>
+		<class name="tests.CheckoutTest"></class>
+		</classes>
+	</test>
+</suite>

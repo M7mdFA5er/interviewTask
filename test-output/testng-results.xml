@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-20T00:08:37 EET" name="Default suite" finished-at="2022-09-20T00:08:48 EET" duration-ms="10505">
+    <groups>
+      <group name="cartTest">
+        <method signature="ProductPageTest.userCanViewCart()[pri:0, instance:tests.ProductPageTest@55183b20]" name="userCanViewCart" class="tests.ProductPageTest"/>
+      </group> <!-- cartTest -->
+      <group name="homeTest">
+        <method signature="HomePageTest.userCanSelectProduct()[pri:0, instance:tests.HomePageTest@59662a0b]" name="userCanSelectProduct" class="tests.HomePageTest"/>
+      </group> <!-- homeTest -->
+    </groups>
+    <test started-at="2022-09-20T00:08:37 EET" name="Default test" finished-at="2022-09-20T00:08:48 EET" duration-ms="10505">
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:31 EET" name="startDriver" finished-at="2022-09-20T00:08:37 EET" duration-ms="6569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="userCanSelectShopSection()[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:37 EET" name="userCanSelectShopSection" finished-at="2022-09-20T00:08:38 EET" duration-ms="1003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSelectShopSection -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:38 EET" name="takeScreenShot" finished-at="2022-09-20T00:08:39 EET" duration-ms="600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSelectShopSection status=SUCCESS method=HomePageTest.userCanSelectShopSection()[pri:0, instance:tests.HomePageTest@59662a0b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method signature="userCanSelectProduct()[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:39 EET" name="userCanSelectProduct" finished-at="2022-09-20T00:08:41 EET" depends-on-methods="tests.HomePageTest.userCanSelectShopSection" duration-ms="1462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSelectProduct -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:41 EET" name="takeScreenShot" finished-at="2022-09-20T00:08:41 EET" duration-ms="678" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSelectProduct status=SUCCESS method=HomePageTest.userCanSelectProduct()[pri:0, instance:tests.HomePageTest@59662a0b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="stopDriver()[pri:0, instance:tests.HomePageTest@59662a0b]" started-at="2022-09-20T00:08:48 EET" name="stopDriver" finished-at="2022-09-20T00:08:49 EET" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.CheckoutTest">
+        <test-method signature="userCanCheckout()[pri:0, instance:tests.CheckoutTest@1bd4fdd]" started-at="2022-09-20T00:08:45 EET" name="userCanCheckout" depends-on-groups="cartTest" finished-at="2022-09-20T00:08:48 EET" duration-ms="2983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanCheckout -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.CheckoutTest@1bd4fdd]" started-at="2022-09-20T00:08:48 EET" name="takeScreenShot" finished-at="2022-09-20T00:08:48 EET" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanCheckout status=SUCCESS method=CheckoutTest.userCanCheckout()[pri:0, instance:tests.CheckoutTest@1bd4fdd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- tests.CheckoutTest -->
+      <class name="tests.ProductPageTest">
+        <test-method signature="userCanAddToCart()[pri:0, instance:tests.ProductPageTest@55183b20]" started-at="2022-09-20T00:08:41 EET" name="userCanAddToCart" depends-on-groups="homeTest" finished-at="2022-09-20T00:08:42 EET" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanAddToCart -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.ProductPageTest@55183b20]" started-at="2022-09-20T00:08:42 EET" name="takeScreenShot" finished-at="2022-09-20T00:08:42 EET" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanAddToCart status=SUCCESS method=ProductPageTest.userCanAddToCart()[pri:0, instance:tests.ProductPageTest@55183b20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method signature="userCanViewCart()[pri:0, instance:tests.ProductPageTest@55183b20]" started-at="2022-09-20T00:08:42 EET" name="userCanViewCart" finished-at="2022-09-20T00:08:45 EET" depends-on-methods="tests.ProductPageTest.userCanAddToCart" duration-ms="2337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanViewCart -->
+        <test-method is-config="true" signature="takeScreenShot(org.testng.ITestResult)[pri:0, instance:tests.ProductPageTest@55183b20]" started-at="2022-09-20T00:08:45 EET" name="takeScreenShot" finished-at="2022-09-20T00:08:45 EET" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanViewCart status=SUCCESS method=ProductPageTest.userCanViewCart()[pri:0, instance:tests.ProductPageTest@55183b20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+      </class> <!-- tests.ProductPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
